@@ -1,0 +1,199 @@
+body{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: teal;
+    position: relative;
+}
+.overlay {
+    position: fixed;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+    /* z-index: 2; */
+}
+.wrapper{
+    width: 720px;
+    height: 480px;
+    background-color:rgb(244, 249, 249);
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 10px 5px 5px #4a4a4a;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatarButton{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: rgb(111, 245, 245);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .avatarButton::after{
+  content: '×';
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%; 
+  cursor: pointer;
+} */
+
+#addAvatarButton{
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: rgb(111, 245, 245);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popUpWrapper{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: lightgray;
+    Backdrop-filter: blur(5px);
+}
+
+
+.popUpHeader{
+    background-color: lightgray;
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .popUpHeader::after{
+    content: '×';
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; 
+    cursor: pointer;
+  } */
+
+
+.cancelButton{
+    content: '×';
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; 
+    cursor: pointer;
+}
+
+.popUpFooter{
+    background-color: lightgray;
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction:  row;
+    justify-content: space-around;
+    align-items: center;
+}
+.popUpContent{
+    background-color: whitesmoke;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatarTextInput{
+    width: 70%;
+    height: 25px;
+    border: 2px solid black;
+    font-size: medium;
+
+}
+.overlayInner {
+    position: fixed;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+    /* z-index: 2; */
+}
+
+.permissionDiv{
+    background-color: whitesmoke;
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: lightgray;
+    Backdrop-filter: blur(5px);
+    font-size: 20px;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.cancelConfirmDiv{
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}

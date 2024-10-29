@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>User Avatars</title>
+</head>
+<body>
+   
+    <div class="wrapper">
+        <button class="addAvatarButton" id="addAvatarButton">+</button>
+    </div>
+    
+   
+        <div id="overlay" class="overlay">
+
+        <div class="popUpWrapper">
+            <div class="popUpHeader">
+                <button class="cancelButton" id="cancelButton">x</button>
+                <h2> New User </h2>
+            </div>
+            <div class="popUpContent">
+                <label for="AvatarName">Enter Name</label>
+            <input class="avatarTextInput" type="text" placeholder="Enter Avatar Name" id="AvatarName">
+            </div>
+            <div class="popUpFooter">
+                <button id="cancelButton">Cancel</button>
+                <button id="addButton">Add</button>
+            </div>
+        </div>
+    </div>
+    <div class="overlayInner" ></div>
+
+    <script src="script.js" type="module"></script>
+</body>
+</html>
